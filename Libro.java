@@ -1,0 +1,85 @@
+// Libro.java
+/**
+ * La clase Libro representa un libro dentro del sistema de gestión de biblioteca.
+ * Contiene  el ID, título, autor, año de publicación,tipo de libro y su disponibilidad para préstamo.
+ *
+ * Esta clase proporciona métodos para acceder y modificar los datos del libro,
+ * como verificar si está disponible o actualizar su estado.
+ */
+public class Libro {
+    private int id;
+    private String titulo;
+    private String autor;
+    private int anio;
+    private String genero;
+    private String tipo;
+    private boolean disponible;
+
+    public Libro(int id, String titulo, String autor, int anio, String genero, String tipo, boolean disponible) {
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anio = anio;
+        this.genero = genero;
+        this.tipo = tipo;
+        this.disponible = disponible;
+    }
+    
+
+    // Getters y setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo){
+        this.tipo = tipo;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+}
